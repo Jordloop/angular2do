@@ -7,13 +7,14 @@ import { BrowserModule } from '@angular/platform-browser';
 //refers to root component.  Matches class declaration in app.component.ts file
 import { AppComponent }   from './app.component';
 import { FormsModule }  from '@angular/forms';
+import { TaskListComponent }  from './task-list.component';
 
 @NgModule({
   //imports built-in module called 'BrowserModule'.  Specifically for this module only.
   imports: [ BrowserModule, FormsModule ],
 
   //an array of all components that will reside in this module
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, TaskListComponent ],
 
   //an array of all components that will reside in this module
   bootstrap: [ AppComponent ]
